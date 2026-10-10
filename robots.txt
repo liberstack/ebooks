@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://liberstack.github.io/pandoc/sitemap.xml
+Sitemap: https://liberstack.github.io/ebooks/sitemap.xml
