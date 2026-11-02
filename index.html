@@ -1059,6 +1059,33 @@
       display: none
     }
 
+    /* Collapse nos h1 */
+    details.collapse>summary {
+      list-style: none;
+      cursor: pointer
+    }
+
+    details.collapse>summary::-webkit-details-marker {
+      display: none
+    }
+
+    details.collapse>summary h1 {
+      display: block;
+      margin-top: 1em
+    }
+
+    details.collapse>summary h1::before {
+      content: "\25B8";
+      display: inline-block;
+      margin-right: .4em;
+      font-size: .8em;
+      transition: transform .2s
+    }
+
+    details.collapse[open]>summary h1::before {
+      transform: rotate(90deg)
+    }
+
     /* Please visit the URL below for more information: */
     /*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
   </style>
@@ -1068,79 +1095,89 @@
 <body for="html-export">
   <div class="crossnote markdown-preview  ">
 
-    <h1 id="aprenda-a-criar-ebooks-profissionais-com-markdown-e-pandoc">Aprenda a criar eBooks profissionais com
-      Markdown e Pandoc </h1>
-    <p>Este livro apresenta um workflow prático para criar e-books em formato EPUB utilizando Markdown e Pandoc. A
-      proposta é ensinar desde os fundamentos da escrita semântica em Markdown até a configuração do ambiente, extensões
-      VS Code e a construção organizada de um e-book, incluindo estrutura de pastas, capítulos, imagens, metadados e
-      comandos no terminal. Ao concluir este livro, você terá uma visão prática de como utilizar Markdown e Pandoc para
-      transformar conteúdo
-      estruturado em documentos digitais, mantendo um fluxo de produção simples, organizado e reutilizável para vários
-      formatos. A partir dos conceitos apresentados, você poderá criar uma base sólida para produzir eBooks e outros
-      documentos digitais de forma mais eficiente.</p>
-    <p><strong>CAPÍTULOS</strong></p>
-    <ol>
-      <li>Introdução ao Markdown</li>
-      <li>Extensões Visual Studio Code para Markdown</li>
-      <li>Instalação e configuração do Pandoc</li>
-      <li>Linhas de comando e Workflow: construindo o e-book</li>
-      <li>Checklist e Resumo</li>
-    </ol>
-    <div style="text-align: left;">
-      <img style="height: 40%; width: 40%;" src="./assets/capa_deluxe_ebooks_markdown_pandoc.png">
-    </div>
-    <blockquote>
-      <p>R$ 85,00 / ARQUIVO EPUB
-      </p>
-    </blockquote>
+    <details class="collapse">
+      <summary>
+        <h1 id="aprenda-a-criar-ebooks-profissionais-com-markdown-e-pandoc">Aprenda a criar eBooks profissionais com
+          Markdown e Pandoc </h1>
+      </summary>
+      <p>Este livro apresenta um workflow prático para criar e-books em formato EPUB utilizando Markdown e Pandoc. A
+        proposta é ensinar desde os fundamentos da escrita semântica em Markdown até a configuração do ambiente,
+        extensões
+        VS Code e a construção organizada de um e-book, incluindo estrutura de pastas, capítulos, imagens, metadados e
+        comandos no terminal. Ao concluir este livro, você terá uma visão prática de como utilizar Markdown e Pandoc
+        para
+        transformar conteúdo
+        estruturado em documentos digitais, mantendo um fluxo de produção simples, organizado e reutilizável para vários
+        formatos. A partir dos conceitos apresentados, você poderá criar uma base sólida para produzir eBooks e outros
+        documentos digitais de forma mais eficiente.</p>
+      <p><strong>CAPÍTULOS</strong></p>
+      <ol>
+        <li>Introdução ao Markdown</li>
+        <li>Extensões Visual Studio Code para Markdown</li>
+        <li>Instalação e configuração do Pandoc</li>
+        <li>Linhas de comando e Workflow: construindo o e-book</li>
+        <li>Checklist e Resumo</li>
+      </ol>
+      <div style="text-align: left;">
+        <img style="height: 40%; width: 40%;" src="./assets/capa_deluxe_ebooks_markdown_pandoc.png">
+      </div>
+      <blockquote>
+        <p>R$ 85,00 / ARQUIVO EPUB
+        </p>
+      </blockquote>
 
 
 
 
 
-    <a href="https://t.me/liberstack" target="_blank" rel="noopener noreferrer"
-      style="display:inline-block; padding:12px 24px; background-color:#16a34a; color:#ffffff; text-decoration:none; font-family:Arial,sans-serif; font-size:16px; font-weight:600; border-radius:6px; text-align:center;">
-      Comprar pelo Telegram
-    </a>
+      <a href="https://t.me/liberstack" target="_blank" rel="noopener noreferrer"
+        style="display:inline-block; padding:12px 24px; background-color:#16a34a; color:#ffffff; text-decoration:none; font-family:Arial,sans-serif; font-size:16px; font-weight:600; border-radius:6px; text-align:center;">
+        Comprar pelo Telegram
+      </a>
+    </details>
 
     <hr>
-    <h1 id="tutorial-git-github-e-primeiro-commit">Tutorial Git, GitHub e primeiro commit </h1>
-    <p>Este livro apresenta um tutorial prático para aprender Git, comandos GitBash e GitHub do zero, desde os
-      conceitos
-      fundamentais até a realização do primeiro commit + deploy básico. A proposta é ensinar os principais conceitos e
-      comandos do Git, a utilização do GitHub e um workflow básico para versionar e publicar projetos, permitindo que
-      o
-      leitor comece a utilizar controle de versão de forma prática. Ao concluir este tutorial, você terá uma base
-      prática para utilizar Git e GitHub no desenvolvimento dos seus
-      próprios projetos. A partir do primeiro repositório e do primeiro commit, você poderá versionar seus arquivos,
-      acompanhar alterações e utilizar o GitHub para armazenar e publicar seus projetos. Mais do que memorizar
-      comandos,
-      a proposta é compreender um workflow simples e reutilizável, criando uma base sólida para continuar evoluindo no
-      desenvolvimento de software.</p>
-    <p><strong>CAPÍTULOS</strong></p>
-    <ol>
-      <li>Introdução ao Git e GitHub</li>
-      <li>Instalação e Configuração</li>
-      <li>Primeiro repositório e primeiro commit</li>
-      <li>Linhas de comando e Workflow básico</li>
-      <li>Checklist e Resumo</li>
-    </ol>
-    <div style="text-align: left;">
-      <img style="height: 40%; width: 40%;" src="./assets/capa_deluxe_git_github_commit.png">
-    </div>
-    <blockquote>
-      <p>R$ 85,00 / ARQUIVO EPUB
-      </p>
-    </blockquote>
+    <details class="collapse">
+      <summary>
+        <h1 id="tutorial-git-github-e-primeiro-commit">Tutorial Git, GitHub e primeiro commit </h1>
+      </summary>
+      <p>Este livro apresenta um tutorial prático para aprender Git, comandos GitBash e GitHub do zero, desde os
+        conceitos
+        fundamentais até a realização do primeiro commit + deploy básico. A proposta é ensinar os principais conceitos e
+        comandos do Git, a utilização do GitHub e um workflow básico para versionar e publicar projetos, permitindo que
+        o
+        leitor comece a utilizar controle de versão de forma prática. Ao concluir este tutorial, você terá uma base
+        prática para utilizar Git e GitHub no desenvolvimento dos seus
+        próprios projetos. A partir do primeiro repositório e do primeiro commit, você poderá versionar seus arquivos,
+        acompanhar alterações e utilizar o GitHub para armazenar e publicar seus projetos. Mais do que memorizar
+        comandos,
+        a proposta é compreender um workflow simples e reutilizável, criando uma base sólida para continuar evoluindo no
+        desenvolvimento de software.</p>
+      <p><strong>CAPÍTULOS</strong></p>
+      <ol>
+        <li>Introdução ao Git e GitHub</li>
+        <li>Instalação e Configuração</li>
+        <li>Primeiro repositório e primeiro commit</li>
+        <li>Linhas de comando e Workflow básico</li>
+        <li>Checklist e Resumo</li>
+      </ol>
+      <div style="text-align: left;">
+        <img style="height: 40%; width: 40%;" src="./assets/capa_deluxe_git_github_commit.png">
+      </div>
+      <blockquote>
+        <p>R$ 85,00 / ARQUIVO EPUB
+        </p>
+      </blockquote>
 
 
 
 
 
-    <a href="https://t.me/liberstack" target="_blank" rel="noopener noreferrer"
-      style="display:inline-block; padding:12px 24px; background-color:#16a34a; color:#ffffff; text-decoration:none; font-family:Arial,sans-serif; font-size:16px; font-weight:600; border-radius:6px; text-align:center;">
-      Comprar pelo Telegram
-    </a>
+      <a href="https://t.me/liberstack" target="_blank" rel="noopener noreferrer"
+        style="display:inline-block; padding:12px 24px; background-color:#16a34a; color:#ffffff; text-decoration:none; font-family:Arial,sans-serif; font-size:16px; font-weight:600; border-radius:6px; text-align:center;">
+        Comprar pelo Telegram
+      </a>
+    </details>
 
 
     <hr>
